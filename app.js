@@ -15,9 +15,9 @@ var app = express();
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 
 passport.use(new GoogleStrategy({
-        clientID: '822246465440-rbv8o8b5t465fupp0voesgfipapmdio1.apps.googleusercontent.com',
-        clientSecret: '2dXAnFE6ZxBPjxhI1MdSRfeF',
-        callbackURL: 'http://localhost:3000/auth/google/callback'},
+        clientID: '222556587003-d48del35gflv95nt9kcg4i982h6glogu.apps.googleusercontent.com',
+        clientSecret: 'Wfl_mD_b0Sh3fNCN-lcWJlvM',
+        callbackURL: 'https://googleoauth1.herokuapp.com/auth/google/callback'},
         function(req, accessToken, refreshToken, profile, done){
             done(null, profile);
         }
